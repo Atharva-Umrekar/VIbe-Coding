@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Web App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Flask Web App</h1>
+        <form action="/submit" method="post">
+            <label for="userInput">Enter your prompt:</label>
+            <input type="text" id="userInput" name="userInput" required>
+            <button type="submit">Submit</button>
+        </form>
+        <div class="analytics">
+            <h2>Power BI Reports</h2>
+            <button onclick="window.open('https://your-powerbi-report-url.com', '_blank')">View Report 1</button>
+            <button onclick="window.open('https://your-powerbi-report-url.com', '_blank')">View Report 2</button>
+            <button onclick="window.open('https://your-powerbi-report-url.com', '_blank')">View Report 3</button>
+        </div>
+    </div>
+</body>
+</html>
